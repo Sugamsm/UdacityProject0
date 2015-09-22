@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.star15.MainActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2C313A"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/title"
+        android:textColor="#191716"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/spotifyB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="#FF7E00"
+        android:onClick="spotifyApp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        android:text="@string/spotify_streamer" />
+
+    <Button
+        android:id="@+id/scoresB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/spotifyB"
+        android:layout_alignLeft="@id/spotifyB"
+        android:layout_alignRight="@id/spotifyB"
+        android:layout_alignStart="@id/spotifyB"
+        android:layout_below="@id/spotifyB"
+        android:layout_marginBottom="10dp"
+        android:background="#FF7E00"
+        android:onClick="scoresApp"
+        android:text="@string/scores_app" />
+
+    <Button
+        android:id="@+id/libraryB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/scoresB"
+        android:layout_alignLeft="@id/scoresB"
+        android:layout_alignRight="@id/scoresB"
+        android:layout_alignStart="@id/scoresB"
+        android:layout_below="@id/scoresB"
+        android:layout_marginBottom="10dp"
+        android:background="#FF7E00"
+        android:onClick="libraryApp"
+        android:text="@string/library_app" />
+
+    <Button
+        android:id="@+id/bibAppB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/libraryB"
+        android:layout_alignLeft="@id/libraryB"
+        android:layout_alignRight="@id/libraryB"
+        android:layout_alignStart="@id/libraryB"
+        android:layout_below="@id/libraryB"
+        android:layout_marginBottom="10dp"
+        android:background="#FF7E00"
+        android:onClick="bibApp"
+        android:text="@string/bib" />
+
+    <Button
+        android:id="@+id/xyzB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/bibAppB"
+        android:layout_alignLeft="@id/bibAppB"
+        android:layout_alignRight="@id/bibAppB"
+        android:layout_alignStart="@id/bibAppB"
+        android:layout_below="@id/bibAppB"
+        android:layout_marginBottom="10dp"
+        android:background="#FF7E00"
+        android:onClick="xyzApp"
+        android:text="@string/xyz_reader" />
+
+    <Button
+        android:id="@+id/capstoneB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/xyzB"
+        android:layout_alignLeft="@id/xyzB"
+        android:layout_alignRight="@id/xyzB"
+        android:layout_alignStart="@id/xyzB"
+        android:layout_below="@id/xyzB"
+        android:background="#E92B04"
+        android:onClick="capstoneApp"
+        android:text="@string/capstone"
+        android:textColor="#fff" />
+</RelativeLayout>
